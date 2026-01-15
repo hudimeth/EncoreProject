@@ -15,10 +15,7 @@ namespace EncoreProject.Data
         {
             using HttpClient client = new HttpClient();
             HttpResponseMessage response = await client.GetAsync($"https://www.hebcal.com/zmanim?cfg=json&zip={zipCode}&date=" +
-                $"{date.ToString("yyyy-MM-dd")}");
-            //HttpResponseMessage response = await client.GetAsync($"https://www.hebcal.com/zmanim?cfg=json&geonameid=3448439&date={date.ToString("yyyy-MM-dd")}");
-            //HttpResponseMessage response = await client.GetAsync("https://www.hebcal.com/zmanim?cfg=json&geonameid=3448439&date=2021-03-23");
-            if (response.IsSuccessStatusCode)
+                $"{date.ToString("yyyy-MM-dd")}");if (response.IsSuccessStatusCode)
             {
                 var responseBody = await response.Content.ReadAsStringAsync();
                 var zmanim = JsonConvert.DeserializeObject<Zmanim>(responseBody);

@@ -41,7 +41,6 @@ const Home = () => {
 
     const onFormSubmit = async e => {
         e.preventDefault();
-        console.log(search);
         const { data } = await axios.get(`/api/zmanim/getzmanim?date=${search.date}&zipcode=${search.zipCode}`);
         setZmanim(data);
     }
