@@ -1,7 +1,7 @@
 ﻿import React, { useState, useEffect } from 'react';
 import { Container, Button, Form, FloatingLabel, Row, Col } from 'react-bootstrap';
 import axios from 'axios';
-import ZmanimTable from './Zmanim';
+import Zmanim from './Zmanim';
 
 const Home = () => {
 
@@ -83,9 +83,9 @@ const Home = () => {
                     </Col>
                 </Row>
             </Form>
-            <ZmanimTable
+            {!!zmanim.chatzotNight && <Zmanim
                 zmanim={zmanim}
-            />
+            />}
         </Container>
     )
 }
