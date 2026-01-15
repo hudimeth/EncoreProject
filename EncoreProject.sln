@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32825.248
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncoreProject.Web", "EncoreProject.Web\EncoreProject.Web.csproj", "{579B8D36-205A-49CA-A57E-B95C55C0E31F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{37CA52C6-A3FD-4D7D-A599-25872F695E0B} = {37CA52C6-A3FD-4D7D-A599-25872F695E0B}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncoreProject.Data", "EncoreProject.Data\EncoreProject.Data.csproj", "{37CA52C6-A3FD-4D7D-A599-25872F695E0B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{579B8D36-205A-49CA-A57E-B95C55C0E31F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{579B8D36-205A-49CA-A57E-B95C55C0E31F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{579B8D36-205A-49CA-A57E-B95C55C0E31F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{579B8D36-205A-49CA-A57E-B95C55C0E31F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37CA52C6-A3FD-4D7D-A599-25872F695E0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37CA52C6-A3FD-4D7D-A599-25872F695E0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37CA52C6-A3FD-4D7D-A599-25872F695E0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37CA52C6-A3FD-4D7D-A599-25872F695E0B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CC5E499B-15D4-445F-91EE-B5800909D907}
+	EndGlobalSection
+EndGlobal
